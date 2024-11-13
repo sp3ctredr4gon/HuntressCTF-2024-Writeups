@@ -1,0 +1,39 @@
+Challenge Description:
+
+You are to conduct a phishing excercise against our client, Pyrch Data.
+
+We have identified the Marketing Director, Sarah Williams (swilliams@pyrchdata.com), as a user susceptible to phishing.
+
+Are you able to successfully phish her? Remember your OSINT ;)
+
+NOTE: The port that becomes accessible upon challenge deployment is an SMTP server. Please use this for sending any phishing emails.
+
+You will not receive an email/human response as the mail infrastructure for this challenge is emulated.
+
+Solution:
+
+A google search for pyrch data reveals pyrchdata.com. Checking the site, we find a list of team members and their positions.
+
+Phishing messages commonly use pretexting tactics and the IT Security Manager, Joe Daveren, seems like the perfect person to impersonate.
+
+Connecting to the challenge instance via telnet we are presented with an SMTP server. Here's the message I crafted and the server response:
+
+HELO local.domain.name
+250 red-phish-blue-phish-+65437499160bee-74d6b88bfb-t6dd6
+MAIL FROM: jdaveren@pyrchdata.com
+250 OK
+RCPT TO: swilliams@pyrchdata.com
+250 OK
+DATA
+354 End data with <CR><LF>.<CR><LF>
+
+SUBJECT: flag
+
+Hello Sarah,
+
+This is Joe from IT. Do you have that flag I gave you?
+
+Thanks.
+
+.
+250 OK. flag{54c6ec05ca19565754351b7fcf9c03b2}
