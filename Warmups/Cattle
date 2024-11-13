@@ -1,0 +1,7 @@
+Challenge Decription: I know it's an esoteric challenge for a Capture the Flag, but could you herd these cows for me?
+
+Solution: The challenge presents a text file containing variations of ‘MOo’ ‘MoO’ ‘moO’ ‘MMM’
+
+I Asked ChatGPT what it thought based on the contents of the text file and the challenge description. One of its suggestions was moo code. Searching the web, I found COW code https://www.cachesleuth.com/cow.html. Decrypting the text file gave the flag.
+
+Flag: flag{6cd6392eb609c6ae4c332ef6a321d9dd}
