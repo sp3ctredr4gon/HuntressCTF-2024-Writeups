@@ -1,0 +1,9 @@
+Challenge Description: Don't believe everything you see on the Internet! Anyway, have you heard this intro soundtrack from Half-Life 3?
+
+Solution: 
+
+The file included is named Half-Life_3_OST.mp3, but it won’t play. 
+
+Running the command ‘file Half-Life_3_OST.mp3’ shows that it is in fact an .png file. Changing the extension and opening the file gives the flag.
+
+Flag: flag{a85466991f0a8dc3d9837a5c32fa0c91}
