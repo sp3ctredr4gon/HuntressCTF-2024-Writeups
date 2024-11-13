@@ -1,0 +1,32 @@
+Challenge Description: Wham! Bam! Amazon is entering the hacking business! Can you buy a flag?
+
+Connecting to the challenge server, we are presented with the Whamazon instance.
+
+We are presented with choices:
+  1. Examine your inventory
+  2. Buy from Whamazon
+  3. Quit
+
+There is currently nothing in our inventory, so we can choose to buy. Choosing this option shows that we have $50 in our wallet.
+
+The options to buy are:
+  1. Apples
+  2. Oranges
+  3. Video Games
+  4. Game Console
+  5. Television
+  6. House
+  7. Flag
+  8. Nothing
+
+Choosing to buy a flag reveals that the flag costs $1000000000, and we only have $50. Apples, however, only cost $3
+
+Fortunately for us, when choosing how many of an item to buy, Whamazon doesn't validate user input. We can choose to buy a negative number of Apples and be given more money!
+
+Buying -1000000000 Apples, we receive $3000000000. Now we have enough to buy the flag!
+
+It won't be that easy though, Whamazon won't let us have it without a game of Rock, Paper, Scissors. It says that it won't choose Scissors and asks us to make a choice.
+
+Assuming that Whamazon isn't telling the truth, I chose Rock. Whamazon also chose Rock. Next, I guessed that Whamazon may actually only be able to make one choice, and that it would NOT choose scissors. I was correct, and won the game. Whamazon then deposited the flag in my inventory.
+
+Going back and checking my inventory revealed the flag: flag{18bdd83cee5690321bb14c70465d3408}
