@@ -1,0 +1,3 @@
+The challenge gives a text file with quite a lot of Base64 encoded text. From the challenge title, I surmised that this could be the flag Base64 encoded 32 times! Rather than write a script, I chose to throw it into Cyberchef with the From Base64 recipe 32 times. Sure enough, here's the flag:
+
+flag{8b3980f3d33f2ad2f531f5365d0e3970}
